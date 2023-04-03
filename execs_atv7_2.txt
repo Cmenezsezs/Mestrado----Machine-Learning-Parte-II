@@ -1,0 +1,38 @@
+EXEC PARA exec_under_down_major = False
+
+lr: 0.00001 [0.01, 0.001, 0.0001, 0.00001]
+Média Acurácia VALI LVQ: 55.666%
+Média Acurácia TEST LVQ: 60.485%
+[[104702   3206]
+ [ 67354   3302]]
+
+k: 3 [3, 7, 13, 17, 23, 29]
+Média Acurácia VALI KNN: 93.297%
+Média Acurácia TEST KNN: 84.016%
+[[149050   5536]
+ [ 23006    972]]
+
+crit: "gini" ["entropy", "gini"]
+max_leaf: 30 [10, 20, 30, 40]
+Média Acurácia VALI TREE: 56.380%
+Média Acurácia TEST TREE: 51.578%
+[[88123  2531]
+ [83933  3977]]
+
+kernel = poly ["linear", "poly", "rbf", "sigmoid"]
+Média Acurácia VALI SVM: 53.492%
+Média Acurácia TEST SVM: 73.015%
+[[128178   4307]
+ [ 43878   2201]]
+
+4 layers, sigmoid ultima, lr = 0.01
+Média Acurácia VALI NN: 55.263%
+Média Acurácia TEST NN: 55.433%
+[[95353  2877]
+ [76703  3631]]
+
+lr = 0.01, 2 layers com tanh como act_func no último
+Média Acurácia VALI NN: 57.196%
+Média Acurácia TEST NN: 53.962%
+[[92447  2599]
+ [79609  3909]]
